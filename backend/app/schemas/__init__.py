@@ -1,0 +1,1 @@
+# BorderVision Pydantic Schemas
