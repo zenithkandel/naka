@@ -49,11 +49,12 @@ async def health_check():
     }
 
 
-# ─── Route Imports (will be added in Phase 2) ─────────────────
-# from app.api import auth, cameras, events, persons, stream, export
-# app.include_router(auth.router)
-# app.include_router(cameras.router)
-# app.include_router(events.router)
-# app.include_router(persons.router)
-# app.include_router(stream.router)
-# app.include_router(export.router)
+# ─── Route Registration ────────────────────────────────────────
+from app.api import auth, cameras, events, persons, stream, export
+
+app.include_router(auth.router)
+app.include_router(cameras.router)
+app.include_router(events.router)
+app.include_router(persons.router)
+app.include_router(stream.router)
+app.include_router(export.router)
