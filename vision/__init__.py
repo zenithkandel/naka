@@ -1,1 +1,0 @@
-# BorderVision Vision Pipeline
